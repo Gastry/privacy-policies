@@ -13,7 +13,6 @@
       --muted: #5b6570;
       --border: #dde3ea;
       --accent: #424950;
-      --accent-soft: #fdd8b3;
       --shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
       --max: 960px;
     }
@@ -21,27 +20,19 @@
     body {
       margin: 0;
       font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background:
-        radial-gradient(circle at top right, rgba(253, 216, 179, 0.45), transparent 28%),
-        linear-gradient(180deg, #fbfcfd 0%, var(--bg) 100%);
+      background: linear-gradient(180deg, #fbfcfd 0%, var(--bg) 100%);
       color: var(--text);
-      line-height: 1.68;
+      line-height: 1.65;
     }
-    .wrap {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 32px 20px 56px;
-    }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 28px 20px 56px; }
     .hero, .card {
       background: var(--panel);
       border: 1px solid var(--border);
-      border-radius: 22px;
+      border-radius: 20px;
       box-shadow: var(--shadow);
     }
-    .hero {
-      padding: 28px 28px 24px;
-      background: linear-gradient(135deg, #ffffff 0%, #f7f9fb 100%);
-    }
+    .hero { padding: 26px; margin-bottom: 18px; }
+    .card { padding: 22px; margin-top: 18px; }
     .eyebrow {
       display: inline-block;
       margin-bottom: 10px;
@@ -51,58 +42,31 @@
       color: var(--accent);
       font-size: 13px;
       font-weight: 700;
-      letter-spacing: 0.04em;
       text-transform: uppercase;
     }
-    h1, h2, h3 {
-      margin: 0 0 14px;
-      line-height: 1.2;
-      color: var(--accent);
-    }
-    h1 { font-size: clamp(32px, 5vw, 48px); }
-    h2 { font-size: 28px; margin-top: 0; }
-    h3 { font-size: 20px; margin-top: 20px; }
+    h1, h2, h3 { color: var(--accent); line-height: 1.2; }
+    h1 { margin: 0 0 12px; font-size: clamp(30px, 5vw, 46px); }
+    h2 { margin: 0 0 14px; font-size: 28px; }
+    h3 { margin: 18px 0 10px; font-size: 20px; }
     p { margin: 0 0 14px; }
-    .meta {
-      margin-top: 18px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      margin-top: 24px;
-    }
-    .card { padding: 24px; }
-    ul { margin: 0 0 14px; padding-left: 22px; }
+    ul { margin: 0; padding-left: 20px; }
     li { margin-bottom: 8px; }
     code {
       padding: 2px 6px;
       border-radius: 8px;
       background: #f1f4f7;
-      color: var(--accent);
       font-family: Consolas, "SFMono-Regular", Menlo, monospace;
-      font-size: 0.95em;
     }
+    .meta, .footer { color: var(--muted); font-size: 14px; }
     .note {
-      padding: 14px 16px;
-      border-left: 4px solid var(--accent-soft);
-      background: #fff8f0;
-      border-radius: 12px;
-      color: var(--muted);
       margin-top: 18px;
-    }
-    .footer {
-      margin-top: 24px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: #fff8f0;
       color: var(--muted);
-      font-size: 14px;
-      text-align: center;
     }
+    .footer { margin-top: 24px; text-align: center; }
     a { color: var(--accent); }
-    @media (min-width: 860px) {
-      .grid { grid-template-columns: 1fr 1fr; }
-    }
   </style>
 </head>
 <body>
@@ -110,361 +74,139 @@
     <section class="hero">
       <div class="eyebrow">Privacy Policy</div>
       <h1>Rule of Three Calculator</h1>
-      <p>
-        Privacy Policy for <strong>Rule of Three Calculator</strong>
-        (<code>com.aplicaciones.gastry.regladetres</code>).
-      </p>
-      <div class="meta">Last updated: 2026-03-21</div>
+      <p>Privacy Policy for <strong>Rule of Three Calculator</strong> (<code>com.aplicaciones.gastry.regladetres</code>).</p>
+      <div class="meta">Last updated: 2026-03-25</div>
     </section>
 
-    <section class="grid" aria-label="Policy content">
-      <article class="card">
-        <h2>Español</h2>
-        <p>Esta política de privacidad explica cómo funciona <strong>Regla de tres</strong> y qué información maneja la aplicación en su versión actual.</p>
-        <h3>Qué información usa la app</h3>
-        <p>La app permite introducir números para realizar cálculos de regla de tres directa. También puede guardar un historial local de los cálculos para que puedas consultarlos más tarde.</p>
-        <p>Ese historial puede incluir los valores que introduces y el resultado calculado.</p>
-        <h3>Para qué se usa esa información</h3>
-        <ul>
-          <li>Para realizar el cálculo solicitado.</li>
-          <li>Para mostrar el resultado en pantalla.</li>
-          <li>Para guardar un historial local de cálculos en el propio dispositivo.</li>
-          <li>Para permitirte reutilizar o borrar cálculos guardados.</li>
-        </ul>
-        <h3>Dónde se guarda</h3>
-        <p>La información usada para los cálculos y el historial se guarda en el propio dispositivo. La app está pensada para funcionar de forma local y no requiere crear una cuenta ni iniciar sesión.</p>
-        <h3>Qué datos no solicita la app</h3>
-        <p>La app no te pide nombre, correo electrónico, teléfono ni otros datos personales para usar su función principal.</p>
-        <h3>Compartición de datos</h3>
-        <p>La app no está diseñada para vender ni compartir tu historial de cálculos con terceros como parte de su función principal.</p>
-        <h3>Conservación y borrado</h3>
-        <p>El historial se conserva en el dispositivo hasta que lo elimines manualmente, borres todos los cálculos guardados o desinstales la app.</p>
-        <p>Puedes borrar entradas individuales del historial o vaciarlo completo desde la propia aplicación.</p>
-        <h3>Seguridad</h3>
-        <p>La información almacenada por la app depende de la protección del propio dispositivo y de las medidas de seguridad que configure el usuario, como bloqueo de pantalla, cifrado o copias de seguridad del sistema si están activadas.</p>
-        <h3>Cambios en esta política</h3>
-        <p>Si en una versión futura cambian las funciones de la app o la forma de tratar la información, esta política se actualizará antes de publicar esa versión.</p>
-        <h3>Contacto</h3>
-        <ul>
-          <li>Desarrollador: Juan Mauricio Piano Monzó</li>
-          <li>Aplicación: Regla de tres</li>
-          <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
-          <li>Correo de soporte: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
-        </ul>
-      </article>
+    <article class="card">
+      <h2>Español</h2>
+      <p><strong>Regla de tres</strong> permite hacer cálculos de proporción directa y guardar un historial local en el dispositivo.</p>
+      <p>Esta versión usa <strong>Google AdMob</strong> para mostrar anuncios. Google AdMob puede recoger y compartir datos como la dirección IP, interacciones con la app y los anuncios, información de diagnóstico e identificadores del dispositivo o de la cuenta, incluido el identificador de publicidad si está disponible. La dirección IP puede usarse para estimar la ubicación general. Estos datos pueden utilizarse para mostrar y medir anuncios, prevenir fraude y gestionar el consentimiento y las opciones de privacidad. Según Google, estos datos se cifran en tránsito.</p>
+      <p>Los valores que introduces para calcular y el historial de resultados se guardan localmente en el dispositivo. La función principal de la app no necesita cuenta ni inicio de sesión y no sube ese historial local como parte normal del cálculo. Puedes borrar entradas individuales, vaciar todo el historial o desinstalar la app para eliminar la información guardada localmente. Si la normativa aplicable lo exige, la app mostrará un formulario de consentimiento y una entrada para revisar tus opciones de privacidad.</p>
+      <ul>
+        <li>Desarrollador: Juan Mauricio Piano Monzó</li>
+        <li>Aplicación: Regla de tres</li>
+        <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
+        <li>Correo de soporte: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
+      </ul>
+    </article>
 
-      <article class="card">
-        <h2>English</h2>
-        <p>This Privacy Policy explains how <strong>Rule of Three Calculator</strong> works and what information the app handles in its current version.</p>
-        <h3>What information the app uses</h3>
-        <p>The app lets you enter numbers to perform direct proportion calculations. It can also keep a local history of your calculations so you can review them later.</p>
-        <p>That history may include the values you enter and the calculated result.</p>
-        <h3>How that information is used</h3>
-        <ul>
-          <li>To perform the calculation you request.</li>
-          <li>To display the result on screen.</li>
-          <li>To store a local calculation history on the device itself.</li>
-          <li>To let you reuse or delete saved calculations.</li>
-        </ul>
-        <h3>Where it is stored</h3>
-        <p>The information used for calculations and the local history are stored on the device itself. The app is designed to work locally and does not require account creation or sign-in.</p>
-        <h3>What the app does not ask for</h3>
-        <p>The app does not ask for your name, email address, phone number, or other personal details to use its main function.</p>
-        <h3>Data sharing</h3>
-        <p>The app is not designed to sell or share your calculation history with third parties as part of its main function.</p>
-        <h3>Retention and deletion</h3>
-        <p>The history stays on the device until you delete entries manually, clear all saved calculations, or uninstall the app.</p>
-        <p>You can remove individual history entries or clear the entire history from inside the app.</p>
-        <h3>Security</h3>
-        <p>Information stored by the app depends on the protection of the device itself and on the security measures configured by the user, such as screen lock, encryption, or operating-system backups if enabled.</p>
-        <h3>Changes to this policy</h3>
-        <p>If a future version changes the app's features or the way information is handled, this policy will be updated before that version is published.</p>
-        <h3>Contact</h3>
-        <ul>
-          <li>Developer: Juan Mauricio Piano Monzó</li>
-          <li>App: Rule of Three Calculator</li>
-          <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
-          <li>Support email: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
-        </ul>
-      </article>
-      <article class="card">
-        <h2>Deutsch</h2>
-        <p>Diese Datenschutzerklärung erläutert, wie <strong>Dreisatz</strong> funktioniert und welche Informationen die App in ihrer aktuellen Version verarbeitet.</p>
-        <h3>Welche Informationen die App verwendet</h3>
-        <p>Mit der App kannst du Zahlen eingeben, um direkte Proportionen zu berechnen. Außerdem kann sie einen lokalen Verlauf deiner Berechnungen speichern, damit du ihn später erneut ansehen kannst.</p>
-        <p>Dieser Verlauf kann die eingegebenen Werte und das berechnete Ergebnis enthalten.</p>
-        <h3>Wofür diese Informationen verwendet werden</h3>
-        <ul>
-          <li>Zur Durchführung der angeforderten Berechnung.</li>
-          <li>Zur Anzeige des Ergebnisses auf dem Bildschirm.</li>
-          <li>Zum Speichern eines lokalen Berechnungsverlaufs auf dem Gerät.</li>
-          <li>Damit du gespeicherte Berechnungen erneut verwenden oder löschen kannst.</li>
-        </ul>
-        <h3>Wo die Informationen gespeichert werden</h3>
-        <p>Die für Berechnungen und den Verlauf verwendeten Informationen werden direkt auf dem Gerät gespeichert. Die App ist für die lokale Nutzung ausgelegt und erfordert weder ein Konto noch eine Anmeldung.</p>
-        <h3>Welche Daten die App nicht anfordert</h3>
-        <p>Für die Hauptfunktion der App werden weder dein Name noch deine E-Mail-Adresse, Telefonnummer oder andere personenbezogene Daten benötigt.</p>
-        <h3>Weitergabe von Daten</h3>
-        <p>Die App ist nicht dafür ausgelegt, deinen Berechnungsverlauf im Rahmen ihrer Hauptfunktion zu verkaufen oder an Dritte weiterzugeben.</p>
-        <h3>Speicherung und Löschung</h3>
-        <p>Der Verlauf bleibt auf dem Gerät gespeichert, bis du einzelne Einträge manuell löschst, alle gespeicherten Berechnungen entfernst oder die App deinstallierst.</p>
-        <p>Du kannst einzelne Verlaufseinträge oder den gesamten Verlauf direkt in der App löschen.</p>
-        <h3>Sicherheit</h3>
-        <p>Die von der App gespeicherten Informationen hängen vom Schutz des Geräts selbst und von den vom Nutzer eingerichteten Sicherheitsmaßnahmen ab, zum Beispiel Bildschirmsperre, Verschlüsselung oder Systemsicherungen, falls diese aktiviert sind.</p>
-        <h3>Änderungen an dieser Erklärung</h3>
-        <p>Wenn sich in einer zukünftigen Version die Funktionen der App oder der Umgang mit Informationen ändern, wird diese Erklärung vor der Veröffentlichung dieser Version aktualisiert.</p>
-        <h3>Kontakt</h3>
-        <ul>
-          <li>Entwickler: Juan Mauricio Piano Monzó</li>
-          <li>App: Dreisatz</li>
-          <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
-          <li>Support-E-Mail: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
-        </ul>
-      </article>
+    <article class="card">
+      <h2>English</h2>
+      <p><strong>Rule of Three Calculator</strong> lets you perform direct proportion calculations and keep a local history on the device.</p>
+      <p>This version uses <strong>Google AdMob</strong> to display ads. Google AdMob may collect and share data such as IP address, app and ad interactions, diagnostic information, and device or account identifiers, including the advertising ID when available. The IP address may be used to estimate the general location of the device. This data may be used to show and measure ads, prevent fraud, and manage consent and privacy choices. According to Google, this data is encrypted in transit.</p>
+      <p>The values you enter for calculations and the calculation history are stored locally on the device. The app's main function does not require an account or sign-in and does not upload that local history as part of its normal calculation flow. You can delete individual entries, clear the whole history, or uninstall the app to remove locally stored information. When required by applicable rules, the app will show a consent form and a way to review your privacy choices.</p>
+      <ul>
+        <li>Developer: Juan Mauricio Piano Monzó</li>
+        <li>App: Rule of Three Calculator</li>
+        <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
+        <li>Support email: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
+      </ul>
+    </article>
 
-      <article class="card">
-        <h2>Français</h2>
-        <p>Cette politique de confidentialité explique comment fonctionne <strong>Règle de trois</strong> et quelles informations l'application traite dans sa version actuelle.</p>
-        <h3>Quelles informations l'application utilise</h3>
-        <p>L'application permet de saisir des nombres pour effectuer des calculs de proportion directe. Elle peut aussi conserver un historique local des calculs afin que vous puissiez les consulter plus tard.</p>
-        <p>Cet historique peut inclure les valeurs saisies et le résultat calculé.</p>
-        <h3>À quoi servent ces informations</h3>
-        <ul>
-          <li>À effectuer le calcul demandé.</li>
-          <li>À afficher le résultat à l'écran.</li>
-          <li>À conserver un historique local des calculs sur l'appareil.</li>
-          <li>À vous permettre de réutiliser ou de supprimer des calculs enregistrés.</li>
-        </ul>
-        <h3>Où elles sont stockées</h3>
-        <p>Les informations utilisées pour les calculs et l'historique local sont stockées directement sur l'appareil. L'application est conçue pour fonctionner localement et ne nécessite ni création de compte ni connexion.</p>
-        <h3>Quelles données l'application ne demande pas</h3>
-        <p>L'application ne demande pas votre nom, votre adresse e-mail, votre numéro de téléphone ni d'autres données personnelles pour utiliser sa fonction principale.</p>
-        <h3>Partage des données</h3>
-        <p>L'application n'est pas conçue pour vendre ni partager votre historique de calculs avec des tiers dans le cadre de sa fonction principale.</p>
-        <h3>Conservation et suppression</h3>
-        <p>L'historique reste sur l'appareil jusqu'à ce que vous supprimiez manuellement des entrées, effaciez tous les calculs enregistrés ou désinstalliez l'application.</p>
-        <p>Vous pouvez supprimer des éléments individuels de l'historique ou vider tout l'historique depuis l'application.</p>
-        <h3>Sécurité</h3>
-        <p>Les informations stockées par l'application dépendent de la protection de l'appareil lui-même et des mesures de sécurité configurées par l'utilisateur, comme le verrouillage d'écran, le chiffrement ou les sauvegardes du système si elles sont activées.</p>
-        <h3>Modifications de cette politique</h3>
-        <p>Si une future version modifie les fonctions de l'application ou la manière dont les informations sont traitées, cette politique sera mise à jour avant la publication de cette version.</p>
-        <h3>Contact</h3>
-        <ul>
-          <li>Développeur: Juan Mauricio Piano Monzó</li>
-          <li>Application: Règle de trois</li>
-          <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
-          <li>E-mail de support: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
-        </ul>
-      </article>
+    <article class="card">
+      <h2>Deutsch</h2>
+      <p><strong>Dreisatz</strong> ermöglicht direkte Proportionsrechnungen und speichert einen lokalen Verlauf auf dem Gerät.</p>
+      <p>Diese Version verwendet <strong>Google AdMob</strong>, um Werbung anzuzeigen. Google AdMob kann Daten wie IP-Adresse, Interaktionen mit der App und den Anzeigen, Diagnoseinformationen sowie Geräte- oder Konto-IDs erfassen und weitergeben, einschließlich der Werbe-ID, falls verfügbar. Die IP-Adresse kann verwendet werden, um den ungefähren Standort des Geräts zu schätzen. Diese Daten können genutzt werden, um Werbung anzuzeigen und zu messen, Betrug zu verhindern und Einwilligungen sowie Datenschutzoptionen zu verwalten. Laut Google werden diese Daten bei der Übertragung verschlüsselt.</p>
+      <p>Die für Berechnungen eingegebenen Werte und der Berechnungsverlauf werden lokal auf dem Gerät gespeichert. Für die Hauptfunktion der App sind weder ein Konto noch eine Anmeldung erforderlich, und dieser lokale Verlauf wird im normalen Berechnungsablauf nicht hochgeladen. Du kannst einzelne Einträge löschen, den gesamten Verlauf leeren oder die App deinstallieren, um lokal gespeicherte Informationen zu entfernen. Wenn dies nach den geltenden Regeln erforderlich ist, zeigt die App ein Einwilligungsformular und einen Zugang zu den Datenschutzoptionen an.</p>
+      <ul>
+        <li>Entwickler: Juan Mauricio Piano Monzó</li>
+        <li>App: Dreisatz</li>
+        <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
+        <li>Support-E-Mail: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
+      </ul>
+    </article>
 
-      <article class="card">
-        <h2>Português</h2>
-        <p>Esta política de privacidade explica como <strong>Regra de três</strong> funciona e quais informações o aplicativo utiliza em sua versão atual.</p>
-        <h3>Quais informações o aplicativo usa</h3>
-        <p>O aplicativo permite inserir números para realizar cálculos de proporção direta. Ele também pode manter um histórico local dos cálculos para que você possa consultá-los depois.</p>
-        <p>Esse histórico pode incluir os valores inseridos e o resultado calculado.</p>
-        <h3>Como essas informações são usadas</h3>
-        <ul>
-          <li>Para realizar o cálculo solicitado.</li>
-          <li>Para mostrar o resultado na tela.</li>
-          <li>Para manter um histórico local de cálculos no próprio dispositivo.</li>
-          <li>Para permitir que você reutilize ou exclua cálculos salvos.</li>
-        </ul>
-        <h3>Onde essas informações são armazenadas</h3>
-        <p>As informações usadas nos cálculos e no histórico local são armazenadas no próprio dispositivo. O aplicativo foi desenvolvido para funcionar localmente e não exige criação de conta nem login.</p>
-        <h3>Quais dados o aplicativo não solicita</h3>
-        <p>O aplicativo não solicita nome, e-mail, telefone nem outros dados pessoais para usar sua função principal.</p>
-        <h3>Compartilhamento de dados</h3>
-        <p>O aplicativo não foi desenvolvido para vender nem compartilhar seu histórico de cálculos com terceiros como parte de sua função principal.</p>
-        <h3>Retenção e exclusão</h3>
-        <p>O histórico permanece no dispositivo até que você exclua entradas manualmente, apague todos os cálculos salvos ou desinstale o aplicativo.</p>
-        <p>Você pode remover itens individuais do histórico ou limpar todo o histórico dentro do aplicativo.</p>
-        <h3>Segurança</h3>
-        <p>As informações armazenadas pelo aplicativo dependem da proteção do próprio dispositivo e das medidas de segurança configuradas pelo usuário, como bloqueio de tela, criptografia ou backups do sistema, se estiverem ativados.</p>
-        <h3>Alterações nesta política</h3>
-        <p>Se uma versão futura alterar os recursos do aplicativo ou a forma como as informações são tratadas, esta política será atualizada antes da publicação dessa versão.</p>
-        <h3>Contato</h3>
-        <ul>
-          <li>Desenvolvedor: Juan Mauricio Piano Monzó</li>
-          <li>Aplicativo: Regra de três</li>
-          <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
-          <li>E-mail de suporte: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
-        </ul>
-      </article>
-      <article class="card">
-        <h2>Italiano</h2>
-        <p>Questa informativa sulla privacy spiega come funziona <strong>Regola del tre</strong> e quali informazioni gestisce l'app nella sua versione attuale.</p>
-        <h3>Quali informazioni utilizza l'app</h3>
-        <p>L'app consente di inserire numeri per eseguire calcoli di proporzione diretta. Può anche conservare una cronologia locale dei calcoli per permetterti di consultarli in seguito.</p>
-        <p>Questa cronologia può includere i valori inseriti e il risultato calcolato.</p>
-        <h3>Come vengono utilizzate queste informazioni</h3>
-        <ul>
-          <li>Per eseguire il calcolo richiesto.</li>
-          <li>Per mostrare il risultato sullo schermo.</li>
-          <li>Per conservare una cronologia locale dei calcoli sul dispositivo.</li>
-          <li>Per consentirti di riutilizzare o eliminare i calcoli salvati.</li>
-        </ul>
-        <h3>Dove vengono conservate</h3>
-        <p>Le informazioni usate per i calcoli e per la cronologia locale vengono memorizzate direttamente sul dispositivo. L'app è pensata per funzionare in locale e non richiede la creazione di un account né l'accesso.</p>
-        <h3>Quali dati l'app non richiede</h3>
-        <p>L'app non richiede nome, indirizzo e-mail, numero di telefono o altri dati personali per usare la sua funzione principale.</p>
-        <h3>Condivisione dei dati</h3>
-        <p>L'app non è progettata per vendere o condividere con terzi la cronologia dei tuoi calcoli come parte della sua funzione principale.</p>
-        <h3>Conservazione ed eliminazione</h3>
-        <p>La cronologia rimane sul dispositivo finché non elimini manualmente le singole voci, cancelli tutti i calcoli salvati o disinstalli l'app.</p>
-        <p>Puoi eliminare singole voci della cronologia o svuotarla completamente direttamente dall'app.</p>
-        <h3>Sicurezza</h3>
-        <p>Le informazioni memorizzate dall'app dipendono dalla protezione del dispositivo stesso e dalle misure di sicurezza configurate dall'utente, come blocco schermo, crittografia o backup di sistema, se attivi.</p>
-        <h3>Modifiche a questa informativa</h3>
-        <p>Se una versione futura modifica le funzioni dell'app o il modo in cui le informazioni vengono trattate, questa informativa sarà aggiornata prima della pubblicazione di tale versione.</p>
-        <h3>Contatto</h3>
-        <ul>
-          <li>Sviluppatore: Juan Mauricio Piano Monzó</li>
-          <li>App: Regola del tre</li>
-          <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
-          <li>E-mail di supporto: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
-        </ul>
-      </article>
+    <article class="card">
+      <h2>Français</h2>
+      <p><strong>Règle de trois</strong> permet d'effectuer des calculs de proportion directe et de conserver un historique local sur l'appareil.</p>
+      <p>Cette version utilise <strong>Google AdMob</strong> pour afficher des publicités. Google AdMob peut collecter et partager des données telles que l'adresse IP, les interactions avec l'application et les annonces, des informations de diagnostic ainsi que des identifiants de l'appareil ou du compte, y compris l'identifiant publicitaire lorsqu'il est disponible. L'adresse IP peut être utilisée pour estimer la localisation générale de l'appareil. Ces données peuvent être utilisées pour afficher et mesurer les publicités, prévenir la fraude et gérer le consentement ainsi que les options de confidentialité. Selon Google, ces données sont chiffrées en transit.</p>
+      <p>Les valeurs saisies pour les calculs et l'historique des résultats sont stockés localement sur l'appareil. La fonction principale de l'application ne nécessite ni compte ni connexion et ne téléverse pas cet historique local dans son fonctionnement normal. Vous pouvez supprimer des entrées individuelles, vider tout l'historique ou désinstaller l'application pour effacer les informations stockées localement. Si les règles applicables l'exigent, l'application affichera un formulaire de consentement et un accès pour revoir vos options de confidentialité.</p>
+      <ul>
+        <li>Développeur: Juan Mauricio Piano Monzó</li>
+        <li>Application: Règle de trois</li>
+        <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
+        <li>E-mail de support: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
+      </ul>
+    </article>
 
-      <article class="card">
-        <h2>Nederlands</h2>
-        <p>Dit privacybeleid legt uit hoe <strong>Regel van drie</strong> werkt en welke informatie de app in de huidige versie verwerkt.</p>
-        <h3>Welke informatie de app gebruikt</h3>
-        <p>Met de app kun je cijfers invoeren om berekeningen met directe verhoudingen uit te voeren. De app kan ook een lokale geschiedenis van je berekeningen bewaren zodat je die later opnieuw kunt bekijken.</p>
-        <p>Die geschiedenis kan de ingevoerde waarden en het berekende resultaat bevatten.</p>
-        <h3>Waarvoor die informatie wordt gebruikt</h3>
-        <ul>
-          <li>Om de gevraagde berekening uit te voeren.</li>
-          <li>Om het resultaat op het scherm te tonen.</li>
-          <li>Om een lokale berekeningsgeschiedenis op het apparaat op te slaan.</li>
-          <li>Om opgeslagen berekeningen opnieuw te gebruiken of te verwijderen.</li>
-        </ul>
-        <h3>Waar de informatie wordt opgeslagen</h3>
-        <p>De informatie die voor berekeningen en de lokale geschiedenis wordt gebruikt, wordt rechtstreeks op het apparaat opgeslagen. De app is bedoeld om lokaal te werken en vereist geen account of aanmelding.</p>
-        <h3>Welke gegevens de app niet vraagt</h3>
-        <p>De app vraagt niet om je naam, e-mailadres, telefoonnummer of andere persoonsgegevens om de hoofdfunctionaliteit te gebruiken.</p>
-        <h3>Gegevensdeling</h3>
-        <p>De app is niet ontworpen om je berekeningsgeschiedenis te verkopen of met derden te delen als onderdeel van de hoofdfunctionaliteit.</p>
-        <h3>Bewaren en verwijderen</h3>
-        <p>De geschiedenis blijft op het apparaat staan totdat je handmatig items verwijdert, alle opgeslagen berekeningen wist of de app verwijdert.</p>
-        <p>Je kunt afzonderlijke items uit de geschiedenis verwijderen of de volledige geschiedenis binnen de app wissen.</p>
-        <h3>Beveiliging</h3>
-        <p>De informatie die door de app wordt opgeslagen, is afhankelijk van de beveiliging van het apparaat zelf en van de beveiligingsmaatregelen die door de gebruiker zijn ingesteld, zoals schermvergrendeling, versleuteling of systeemback-ups als die zijn ingeschakeld.</p>
-        <h3>Wijzigingen in dit beleid</h3>
-        <p>Als een toekomstige versie de functies van de app of de manier waarop informatie wordt verwerkt verandert, wordt dit beleid bijgewerkt voordat die versie wordt gepubliceerd.</p>
-        <h3>Contact</h3>
-        <ul>
-          <li>Ontwikkelaar: Juan Mauricio Piano Monzó</li>
-          <li>App: Regel van drie</li>
-          <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
-          <li>Support-e-mail: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
-        </ul>
-      </article>
+    <article class="card">
+      <h2>Português</h2>
+      <p><strong>Regra de três</strong> permite fazer cálculos de proporção direta e manter um histórico local no dispositivo.</p>
+      <p>Esta versão usa <strong>Google AdMob</strong> para exibir anúncios. O Google AdMob pode coletar e compartilhar dados como endereço IP, interações com o app e com os anúncios, informações de diagnóstico e identificadores do dispositivo ou da conta, incluindo o identificador de publicidade quando disponível. O endereço IP pode ser usado para estimar a localização geral do dispositivo. Esses dados podem ser usados para exibir e medir anúncios, prevenir fraude e gerenciar consentimento e opções de privacidade. Segundo o Google, esses dados são criptografados em trânsito.</p>
+      <p>Os valores informados para os cálculos e o histórico de resultados ficam armazenados localmente no dispositivo. A função principal do aplicativo não exige conta nem login e não envia esse histórico local como parte normal do cálculo. Você pode excluir entradas individuais, limpar todo o histórico ou desinstalar o aplicativo para remover as informações salvas localmente. Quando exigido pelas regras aplicáveis, o aplicativo exibirá um formulário de consentimento e um acesso para revisar suas opções de privacidade.</p>
+      <ul>
+        <li>Desenvolvedor: Juan Mauricio Piano Monzó</li>
+        <li>Aplicativo: Regra de três</li>
+        <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
+        <li>E-mail de suporte: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
+      </ul>
+    </article>
 
-      <article class="card">
-        <h2>Русский</h2>
-        <p>В этой политике конфиденциальности объясняется, как работает <strong>Прямая пропорция</strong> и какие данные приложение обрабатывает в текущей версии.</p>
-        <h3>Какие данные использует приложение</h3>
-        <p>Приложение позволяет вводить числа для расчётов прямой пропорции. Оно также может сохранять локальную историю вычислений, чтобы вы могли просматривать её позже.</p>
-        <p>Эта история может включать введённые значения и рассчитанный результат.</p>
-        <h3>Для чего используются эти данные</h3>
-        <ul>
-          <li>Для выполнения запрошенного расчёта.</li>
-          <li>Для отображения результата на экране.</li>
-          <li>Для хранения локальной истории вычислений на самом устройстве.</li>
-          <li>Чтобы вы могли повторно использовать или удалять сохранённые расчёты.</li>
-        </ul>
-        <h3>Где хранятся данные</h3>
-        <p>Данные, используемые для расчётов и локальной истории, хранятся непосредственно на устройстве. Приложение рассчитано на локальную работу и не требует создания учётной записи или входа.</p>
-        <h3>Какие данные приложение не запрашивает</h3>
-        <p>Для использования основной функции приложение не запрашивает ваше имя, адрес электронной почты, номер телефона или другие персональные данные.</p>
-        <h3>Передача данных</h3>
-        <p>Приложение не предназначено для продажи или передачи истории ваших вычислений третьим лицам в рамках своей основной функции.</p>
-        <h3>Хранение и удаление</h3>
-        <p>История остаётся на устройстве, пока вы не удалите отдельные записи вручную, не очистите все сохранённые вычисления или не удалите приложение.</p>
-        <p>Вы можете удалять отдельные записи истории или полностью очищать историю прямо в приложении.</p>
-        <h3>Безопасность</h3>
-        <p>Безопасность данных, сохраняемых приложением, зависит от защиты самого устройства и от настроенных пользователем мер безопасности, таких как блокировка экрана, шифрование или резервное копирование системы, если они включены.</p>
-        <h3>Изменения в этой политике</h3>
-        <p>Если в будущей версии изменятся функции приложения или способ обработки данных, эта политика будет обновлена до публикации такой версии.</p>
-        <h3>Контакты</h3>
-        <ul>
-          <li>Разработчик: Juan Mauricio Piano Monzó</li>
-          <li>Приложение: Прямая пропорция</li>
-          <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
-          <li>Электронная почта поддержки: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
-        </ul>
-      </article>
-      <article class="card">
-        <h2>हिन्दी</h2>
-        <p>यह गोपनीयता नीति बताती है कि <strong>त्रैराशिक नियम</strong> कैसे काम करता है और ऐप अपने वर्तमान संस्करण में कौन सी जानकारी संभालता है।</p>
-        <h3>ऐप कौन सी जानकारी उपयोग करता है</h3>
-        <p>यह ऐप सीधे अनुपात की गणना करने के लिए आपको संख्याएँ दर्ज करने देता है। यह आपकी गणनाओं का स्थानीय इतिहास भी सहेज सकता है ताकि आप उन्हें बाद में फिर देख सकें।</p>
-        <p>इस इतिहास में आपके द्वारा दर्ज किए गए मान और गणना किया गया परिणाम शामिल हो सकता है।</p>
-        <h3>इस जानकारी का उपयोग किस लिए किया जाता है</h3>
-        <ul>
-          <li>आपकी मांगी गई गणना करने के लिए।</li>
-          <li>स्क्रीन पर परिणाम दिखाने के लिए।</li>
-          <li>डिवाइस पर स्थानीय गणना इतिहास सहेजने के लिए।</li>
-          <li>ताकि आप सहेजी गई गणनाओं को फिर से उपयोग या हटा सकें।</li>
-        </ul>
-        <h3>यह जानकारी कहाँ संग्रहीत होती है</h3>
-        <p>गणनाओं और स्थानीय इतिहास के लिए उपयोग की जाने वाली जानकारी सीधे डिवाइस पर संग्रहीत होती है। ऐप को स्थानीय रूप से काम करने के लिए बनाया गया है और इसमें खाता बनाना या साइन इन करना आवश्यक नहीं है।</p>
-        <h3>ऐप कौन सा डेटा नहीं मांगता</h3>
-        <p>अपनी मुख्य सुविधा का उपयोग करने के लिए ऐप आपका नाम, ईमेल पता, फोन नंबर या अन्य व्यक्तिगत जानकारी नहीं मांगता।</p>
-        <h3>डेटा साझा करना</h3>
-        <p>ऐप को इसकी मुख्य सुविधा के हिस्से के रूप में आपके गणना इतिहास को तीसरे पक्ष के साथ बेचने या साझा करने के लिए नहीं बनाया गया है।</p>
-        <h3>संग्रहण और हटाना</h3>
-        <p>इतिहास डिवाइस पर तब तक बना रहता है जब तक आप प्रविष्टियाँ मैन्युअल रूप से नहीं हटाते, सभी सहेजी गई गणनाएँ साफ नहीं करते या ऐप अनइंस्टॉल नहीं करते।</p>
-        <p>आप ऐप के भीतर से इतिहास की अलग-अलग प्रविष्टियाँ हटा सकते हैं या पूरा इतिहास साफ कर सकते हैं।</p>
-        <h3>सुरक्षा</h3>
-        <p>ऐप द्वारा संग्रहीत जानकारी की सुरक्षा डिवाइस की सुरक्षा और उपयोगकर्ता द्वारा सेट की गई सुरक्षा व्यवस्थाओं पर निर्भर करती है, जैसे स्क्रीन लॉक, एन्क्रिप्शन या सिस्टम बैकअप, यदि वे सक्षम हों।</p>
-        <h3>इस नीति में बदलाव</h3>
-        <p>यदि किसी भविष्य के संस्करण में ऐप की सुविधाएँ या जानकारी को संभालने का तरीका बदलता है, तो उस संस्करण को प्रकाशित करने से पहले यह नीति अपडेट की जाएगी।</p>
-        <h3>संपर्क</h3>
-        <ul>
-          <li>डेवलपर: Juan Mauricio Piano Monzó</li>
-          <li>ऐप: त्रैराशिक नियम</li>
-          <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
-          <li>सहायता ईमेल: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
-        </ul>
-      </article>
+    <article class="card">
+      <h2>Italiano</h2>
+      <p><strong>Regola del tre</strong> consente di eseguire calcoli di proporzione diretta e di mantenere una cronologia locale sul dispositivo.</p>
+      <p>Questa versione utilizza <strong>Google AdMob</strong> per mostrare annunci. Google AdMob può raccogliere e condividere dati come indirizzo IP, interazioni con l'app e con gli annunci, informazioni diagnostiche e identificatori del dispositivo o dell'account, incluso l'identificatore pubblicitario quando disponibile. L'indirizzo IP può essere utilizzato per stimare la posizione generale del dispositivo. Questi dati possono essere usati per mostrare e misurare gli annunci, prevenire frodi e gestire il consenso e le opzioni sulla privacy. Secondo Google, questi dati sono cifrati durante il trasferimento.</p>
+      <p>I valori inseriti per i calcoli e la cronologia dei risultati vengono salvati localmente sul dispositivo. La funzione principale dell'app non richiede account né accesso e non carica questa cronologia locale come parte del normale calcolo. Puoi eliminare singole voci, svuotare tutta la cronologia o disinstallare l'app per rimuovere le informazioni salvate localmente. Quando richiesto dalle regole applicabili, l'app mostrerà un modulo di consenso e un accesso per rivedere le opzioni sulla privacy.</p>
+      <ul>
+        <li>Sviluppatore: Juan Mauricio Piano Monzó</li>
+        <li>App: Regola del tre</li>
+        <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
+        <li>E-mail di supporto: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
+      </ul>
+    </article>
 
-      <article class="card">
-        <h2>Bahasa Indonesia</h2>
-        <p>Kebijakan privasi ini menjelaskan bagaimana <strong>Aturan tiga</strong> bekerja dan informasi apa yang ditangani aplikasi dalam versi saat ini.</p>
-        <h3>Informasi apa yang digunakan aplikasi</h3>
-        <p>Aplikasi ini memungkinkan Anda memasukkan angka untuk melakukan perhitungan proporsi langsung. Aplikasi juga dapat menyimpan riwayat perhitungan secara lokal agar dapat Anda lihat kembali nanti.</p>
-        <p>Riwayat tersebut dapat mencakup nilai yang Anda masukkan dan hasil perhitungannya.</p>
-        <h3>Bagaimana informasi tersebut digunakan</h3>
-        <ul>
-          <li>Untuk melakukan perhitungan yang Anda minta.</li>
-          <li>Untuk menampilkan hasil di layar.</li>
-          <li>Untuk menyimpan riwayat perhitungan lokal di perangkat.</li>
-          <li>Untuk memungkinkan Anda menggunakan kembali atau menghapus perhitungan yang disimpan.</li>
-        </ul>
-        <h3>Di mana informasi disimpan</h3>
-        <p>Informasi yang digunakan untuk perhitungan dan riwayat lokal disimpan langsung di perangkat. Aplikasi dirancang untuk bekerja secara lokal dan tidak memerlukan pembuatan akun atau masuk.</p>
-        <h3>Data apa yang tidak diminta aplikasi</h3>
-        <p>Aplikasi tidak meminta nama, alamat email, nomor telepon, atau data pribadi lainnya untuk menggunakan fungsi utamanya.</p>
-        <h3>Pembagian data</h3>
-        <p>Aplikasi tidak dirancang untuk menjual atau membagikan riwayat perhitungan Anda kepada pihak ketiga sebagai bagian dari fungsi utamanya.</p>
-        <h3>Penyimpanan dan penghapusan</h3>
-        <p>Riwayat tetap tersimpan di perangkat sampai Anda menghapus entri secara manual, membersihkan semua perhitungan yang disimpan, atau mencopot pemasangan aplikasi.</p>
-        <p>Anda dapat menghapus entri riwayat satu per satu atau mengosongkan seluruh riwayat langsung dari aplikasi.</p>
-        <h3>Keamanan</h3>
-        <p>Informasi yang disimpan oleh aplikasi bergantung pada perlindungan perangkat itu sendiri dan pada langkah keamanan yang diatur oleh pengguna, seperti kunci layar, enkripsi, atau cadangan sistem jika diaktifkan.</p>
-        <h3>Perubahan pada kebijakan ini</h3>
-        <p>Jika versi mendatang mengubah fitur aplikasi atau cara informasi ditangani, kebijakan ini akan diperbarui sebelum versi tersebut dipublikasikan.</p>
-        <h3>Kontak</h3>
-        <ul>
-          <li>Pengembang: Juan Mauricio Piano Monzó</li>
-          <li>Aplikasi: Aturan tiga</li>
-          <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
-          <li>Email dukungan: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
-        </ul>
-      </article>
-    </section>
+    <article class="card">
+      <h2>Nederlands</h2>
+      <p><strong>Regel van drie</strong> maakt directe verhoudingsberekeningen mogelijk en bewaart een lokale geschiedenis op het apparaat.</p>
+      <p>Deze versie gebruikt <strong>Google AdMob</strong> om advertenties te tonen. Google AdMob kan gegevens verzamelen en delen zoals het IP-adres, interacties met de app en advertenties, diagnostische informatie en apparaat- of account-ID's, waaronder de advertentie-ID als die beschikbaar is. Het IP-adres kan worden gebruikt om de algemene locatie van het apparaat te schatten. Deze gegevens kunnen worden gebruikt om advertenties te tonen en te meten, fraude te voorkomen en toestemming en privacyopties te beheren. Volgens Google worden deze gegevens versleuteld tijdens verzending.</p>
+      <p>De ingevoerde waarden voor berekeningen en de geschiedenis van resultaten worden lokaal op het apparaat opgeslagen. Voor de hoofdfunctionaliteit van de app zijn geen account of aanmelding nodig en deze lokale geschiedenis wordt niet geüpload als onderdeel van de normale berekening. Je kunt afzonderlijke items verwijderen, de volledige geschiedenis wissen of de app verwijderen om lokaal opgeslagen informatie te verwijderen. Als de toepasselijke regels dat vereisen, toont de app een toestemmingsformulier en een toegang om je privacyopties te bekijken.</p>
+      <ul>
+        <li>Ontwikkelaar: Juan Mauricio Piano Monzó</li>
+        <li>App: Regel van drie</li>
+        <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
+        <li>Support-e-mail: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Русский</h2>
+      <p><strong>Прямая пропорция</strong> позволяет выполнять расчёты прямой пропорции и хранить локальную историю на устройстве.</p>
+      <p>Эта версия использует <strong>Google AdMob</strong> для показа рекламы. Google AdMob может собирать и передавать такие данные, как IP-адрес, взаимодействия с приложением и рекламой, диагностическая информация и идентификаторы устройства или аккаунта, включая рекламный идентификатор, если он доступен. IP-адрес может использоваться для оценки общего местоположения устройства. Эти данные могут использоваться для показа и измерения рекламы, предотвращения мошенничества и управления согласием и настройками конфиденциальности. По данным Google, эти данные шифруются при передаче.</p>
+      <p>Значения, которые вы вводите для расчётов, и история результатов сохраняются локально на устройстве. Для основной функции приложения не нужны аккаунт и вход, и эта локальная история не загружается как обычная часть расчёта. Вы можете удалять отдельные записи, очищать всю историю или удалить приложение, чтобы удалить локально сохранённую информацию. Если этого требуют применимые правила, приложение покажет форму согласия и доступ для пересмотра настроек конфиденциальности.</p>
+      <ul>
+        <li>Разработчик: Juan Mauricio Piano Monzó</li>
+        <li>Приложение: Прямая пропорция</li>
+        <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
+        <li>Электронная почта поддержки: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>हिन्दी</h2>
+      <p><strong>त्रैराशिक नियम</strong> आपको सीधे अनुपात की गणना करने और डिवाइस पर स्थानीय इतिहास रखने की सुविधा देता है।</p>
+      <p>यह संस्करण <strong>Google AdMob</strong> का उपयोग विज्ञापन दिखाने के लिए करता है। Google AdMob IP पता, ऐप और विज्ञापनों के साथ इंटरैक्शन, डायग्नोस्टिक जानकारी और डिवाइस या खाते के पहचानकर्ताओं जैसे डेटा एकत्र और साझा कर सकता है, जिनमें उपलब्ध होने पर विज्ञापन पहचानकर्ता भी शामिल है। IP पते का उपयोग डिवाइस के सामान्य स्थान का अनुमान लगाने के लिए किया जा सकता है। इन डेटा का उपयोग विज्ञापन दिखाने और मापने, धोखाधड़ी रोकने और सहमति व गोपनीयता विकल्पों को प्रबंधित करने के लिए किया जा सकता है। Google के अनुसार, ये डेटा ट्रांजिट के दौरान एन्क्रिप्ट किए जाते हैं।</p>
+      <p>गणनाओं के लिए दर्ज किए गए मान और परिणामों का इतिहास डिवाइस पर स्थानीय रूप से सहेजा जाता है। ऐप की मुख्य सुविधा के लिए खाता या साइन-इन की आवश्यकता नहीं होती और यह स्थानीय इतिहास सामान्य गणना प्रक्रिया के हिस्से के रूप में अपलोड नहीं किया जाता। आप अलग-अलग प्रविष्टियाँ हटा सकते हैं, पूरा इतिहास साफ कर सकते हैं या स्थानीय रूप से सहेजी गई जानकारी हटाने के लिए ऐप अनइंस्टॉल कर सकते हैं। यदि लागू नियम इसकी मांग करते हैं, तो ऐप सहमति फ़ॉर्म और गोपनीयता विकल्पों की समीक्षा के लिए एक प्रवेश बिंदु दिखाएगा।</p>
+      <ul>
+        <li>डेवलपर: Juan Mauricio Piano Monzó</li>
+        <li>ऐप: त्रैराशिक नियम</li>
+        <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
+        <li>सहायता ईमेल: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Bahasa Indonesia</h2>
+      <p><strong>Aturan tiga</strong> memungkinkan Anda melakukan perhitungan proporsi langsung dan menyimpan riwayat lokal di perangkat.</p>
+      <p>Versi ini menggunakan <strong>Google AdMob</strong> untuk menampilkan iklan. Google AdMob dapat mengumpulkan dan membagikan data seperti alamat IP, interaksi dengan aplikasi dan iklan, informasi diagnostik, serta pengenal perangkat atau akun, termasuk ID iklan jika tersedia. Alamat IP dapat digunakan untuk memperkirakan lokasi umum perangkat. Data ini dapat digunakan untuk menampilkan dan mengukur iklan, mencegah penipuan, serta mengelola persetujuan dan opsi privasi. Menurut Google, data ini dienkripsi saat dikirim.</p>
+      <p>Nilai yang Anda masukkan untuk perhitungan dan riwayat hasil disimpan secara lokal di perangkat. Fungsi utama aplikasi tidak memerlukan akun atau login dan riwayat lokal ini tidak diunggah sebagai bagian normal dari proses perhitungan. Anda dapat menghapus entri satu per satu, membersihkan seluruh riwayat, atau mencopot pemasangan aplikasi untuk menghapus informasi yang tersimpan secara lokal. Jika diwajibkan oleh aturan yang berlaku, aplikasi akan menampilkan formulir persetujuan dan akses untuk meninjau opsi privasi Anda.</p>
+      <ul>
+        <li>Pengembang: Juan Mauricio Piano Monzó</li>
+        <li>Aplikasi: Aturan tiga</li>
+        <li>Package id: <code>com.aplicaciones.gastry.regladetres</code></li>
+        <li>Email dukungan: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
+      </ul>
+    </article>
 
     <div class="note">
       This page is intended to be used as the public privacy policy URL for the app's Play Store listing.
