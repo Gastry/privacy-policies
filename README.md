@@ -1,2 +1,2 @@
 # privacy-policies
-Repositorio para la políticas de privacidad y similares
+Repositorio para las políticas de privacidad y similares.
