@@ -29,7 +29,7 @@
     .hero, .card {
       background: var(--panel);
       border: 1px solid var(--border);
-      border-radius: 20px;
+      border-radius: 18px;
       box-shadow: var(--shadow);
     }
     .hero { padding: 26px; margin-bottom: 18px; }
@@ -72,6 +72,16 @@
       color: var(--muted);
       font-size: 14px;
     }
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .nav a {
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
     .note {
       margin-top: 18px;
       padding: 14px 16px;
@@ -81,6 +91,7 @@
     }
     .footer { margin-top: 24px; text-align: center; }
     a { color: var(--accent); }
+    [dir="rtl"] { text-align: right; }
   </style>
 </head>
 <body>
@@ -89,88 +100,164 @@
       <div class="eyebrow">Privacy Policy</div>
       <h1>StatusClip</h1>
       <p>Privacy Policy for <strong>StatusClip</strong> (<code>com.aplicaciones.gastry.statusclip</code>).</p>
-      <div class="meta">Last updated: 2026-05-19</div>
+      <div class="meta">Last updated: 2026-05-27</div>
       <div class="summary">
         <div class="pill">No account, no sign-in, no advertising SDKs and no analytics SDKs.</div>
         <div class="pill">Photos and videos are processed locally on the device.</div>
         <div class="pill">Downloaded statuses are saved to the user's gallery.</div>
       </div>
+      <nav class="nav" aria-label="Languages">
+        <a href="#en">English</a>
+        <a href="#es">Español</a>
+        <a href="#pt-br">Português (Brasil)</a>
+        <a href="#id">Bahasa Indonesia</a>
+        <a href="#hi">हिन्दी</a>
+        <a href="#ar">العربية</a>
+      </nav>
     </section>
 
-    <article class="card" lang="en">
+    <article class="card" id="en" lang="en">
       <h2>English</h2>
       <p><strong>StatusClip</strong> helps you view, save and share status photos and videos that you have already viewed and that are available on your Android device.</p>
       <p>The app does not require an account, sign-in or registration. It does not include advertising SDKs, analytics SDKs, tracking SDKs or in-app purchases.</p>
-
       <h3>Data accessed by the app</h3>
       <p>To provide its core features, StatusClip may access photos and videos available on your device, including status media that you choose or allow the app to read. This access is used to show thumbnails, play videos, save selected media to your gallery, share selected media when you ask the app to do so, and support the optional auto-save feature.</p>
       <p>StatusClip also stores app settings locally on your device, such as selected status sources, whether auto-save is enabled, display preferences, and local references to statuses you have saved.</p>
-
       <h3>Data collection and sharing</h3>
       <p>StatusClip does not upload your photos, videos, status media, settings or saved history to servers owned by the developer. The app does not sell personal data.</p>
       <p>When you use the share button, Android opens the system share sheet and you choose the app or contact that receives the selected photo or video. That transfer is started by you and is handled by Android and the app you choose.</p>
-
       <h3>Permissions</h3>
       <ul>
         <li><strong>Photos and videos:</strong> used to find and display status media on your device and to save selected media to your gallery.</li>
         <li><strong>Notifications:</strong> used only if you enable auto-save, so Android can show that the auto-save service is active.</li>
         <li><strong>Foreground service:</strong> used only for the optional auto-save feature while it is active.</li>
       </ul>
-
       <h3>Retention and deletion</h3>
       <p>StatusClip stores its settings and saved-status references locally on your device. You can delete this local app data by clearing the app data in Android settings or uninstalling the app. Downloaded photos and videos are stored in your gallery and can be deleted from your gallery app or file manager.</p>
-
-      <h3>Security</h3>
-      <p>StatusClip is designed to work locally on your device. Because the app does not upload your status photos or videos to developer-owned servers, there is no developer server-side storage for that media.</p>
-
       <h3>Relationship with WhatsApp and Meta</h3>
-      <p>StatusClip is not affiliated, associated with, endorsed by, or sponsored by WhatsApp LLC or Meta Platforms, Inc. Use the app responsibly and respect the privacy and rights of other people.</p>
-
+      <p>StatusClip is not affiliated with, associated with, endorsed by or sponsored by WhatsApp LLC or Meta Platforms, Inc. Use the app responsibly and respect the privacy and rights of other people.</p>
       <h3>Contact</h3>
-      <ul>
-        <li>Developer: Gastry</li>
-        <li>App: StatusClip</li>
-        <li>Package id: <code>com.aplicaciones.gastry.statusclip</code></li>
-        <li>Support email: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
-      </ul>
+      <p>Developer: Gastry · Support email: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></p>
     </article>
 
-    <article class="card" lang="es">
+    <article class="card" id="es" lang="es">
       <h2>Español</h2>
       <p><strong>StatusClip</strong> te ayuda a ver, guardar y compartir fotos y vídeos de estados que ya has visto y que están disponibles en tu dispositivo Android.</p>
-      <p>La app no requiere cuenta, inicio de sesión ni registro. No incluye SDKs de publicidad, SDKs de analítica, SDKs de seguimiento ni compras dentro de la app.</p>
-
+      <p>La app no requiere cuenta, inicio de sesión ni registro. No incluye SDKs de publicidad, analítica, seguimiento ni compras dentro de la app.</p>
       <h3>Datos a los que accede la app</h3>
-      <p>Para ofrecer sus funciones principales, StatusClip puede acceder a fotos y vídeos disponibles en tu dispositivo, incluidos los estados que elijas o permitas leer a la app. Este acceso se usa para mostrar miniaturas, reproducir vídeos, guardar los elementos seleccionados en tu galería, compartir elementos seleccionados cuando tú lo solicitas y permitir el autoguardado opcional.</p>
-      <p>StatusClip también guarda ajustes de la app localmente en tu dispositivo, como el origen de estados seleccionado, si el autoguardado está activado, preferencias de visualización y referencias locales a estados que has guardado.</p>
-
+      <p>Para ofrecer sus funciones principales, StatusClip puede acceder a fotos y vídeos disponibles en tu dispositivo, incluidos los estados que elijas o permitas leer a la app. Este acceso se usa para mostrar miniaturas, reproducir vídeos, guardar los elementos seleccionados en tu galería, compartir elementos cuando tú lo solicitas y permitir el autoguardado opcional.</p>
+      <p>StatusClip también guarda ajustes localmente en tu dispositivo, como el origen de estados seleccionado, si el autoguardado está activado, preferencias de visualización y referencias locales a estados guardados.</p>
       <h3>Recogida y uso compartido de datos</h3>
       <p>StatusClip no sube tus fotos, vídeos, estados, ajustes ni historial de guardados a servidores propios del desarrollador. La app no vende datos personales.</p>
       <p>Cuando usas el botón de compartir, Android abre el menú del sistema y tú eliges la app o contacto que recibirá la foto o el vídeo seleccionado. Esa transferencia la inicias tú y la gestionan Android y la app que elijas.</p>
-
       <h3>Permisos</h3>
       <ul>
         <li><strong>Fotos y vídeos:</strong> se usan para encontrar y mostrar estados en tu dispositivo y guardar los elementos seleccionados en tu galería.</li>
         <li><strong>Notificaciones:</strong> se usan solo si activas el autoguardado, para que Android muestre que el servicio está activo.</li>
         <li><strong>Servicio en primer plano:</strong> se usa solo para el autoguardado opcional mientras está activo.</li>
       </ul>
-
       <h3>Conservación y eliminación</h3>
       <p>StatusClip guarda sus ajustes y referencias de estados guardados localmente en tu dispositivo. Puedes borrar esos datos desde los ajustes de Android, limpiando los datos de la app o desinstalándola. Las fotos y vídeos descargados se guardan en tu galería y puedes eliminarlos desde tu app de galería o gestor de archivos.</p>
-
-      <h3>Seguridad</h3>
-      <p>StatusClip está diseñada para funcionar localmente en tu dispositivo. Como la app no sube tus fotos o vídeos de estados a servidores propios del desarrollador, no existe almacenamiento en servidores del desarrollador para ese contenido.</p>
-
       <h3>Relación con WhatsApp y Meta</h3>
       <p>StatusClip no está afiliada, asociada, respaldada ni patrocinada por WhatsApp LLC ni Meta Platforms, Inc. Usa la app de forma responsable y respeta la privacidad y derechos de otras personas.</p>
-
       <h3>Contacto</h3>
+      <p>Desarrollador: Gastry · Correo de soporte: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></p>
+    </article>
+
+    <article class="card" id="pt-br" lang="pt-BR">
+      <h2>Português (Brasil)</h2>
+      <p><strong>StatusClip</strong> ajuda você a ver, salvar e compartilhar fotos e vídeos de status que você já visualizou e que estão disponíveis no seu dispositivo Android.</p>
+      <p>O app não exige conta, login ou cadastro. Ele não inclui SDKs de anúncios, analytics, rastreamento ou compras no app.</p>
+      <h3>Dados acessados pelo app</h3>
+      <p>Para oferecer seus recursos principais, o StatusClip pode acessar fotos e vídeos disponíveis no seu dispositivo, incluindo mídias de status que você escolher ou permitir que o app leia. Esse acesso é usado para mostrar miniaturas, reproduzir vídeos, salvar mídias selecionadas na sua galeria, compartilhar mídias quando você solicitar e oferecer o recurso opcional de salvamento automático.</p>
+      <p>O StatusClip também armazena configurações localmente no dispositivo, como fontes de status selecionadas, estado do salvamento automático, preferências de exibição e referências locais a status salvos.</p>
+      <h3>Coleta e compartilhamento de dados</h3>
+      <p>O StatusClip não envia suas fotos, vídeos, status, configurações ou histórico de salvos para servidores do desenvolvedor. O app não vende dados pessoais.</p>
+      <p>Ao usar o botão de compartilhar, o Android abre a folha de compartilhamento do sistema e você escolhe o app ou contato que receberá a foto ou o vídeo selecionado.</p>
+      <h3>Permissões</h3>
       <ul>
-        <li>Desarrollador: Gastry</li>
-        <li>Aplicación: StatusClip</li>
-        <li>Package id: <code>com.aplicaciones.gastry.statusclip</code></li>
-        <li>Correo de soporte: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></li>
+        <li><strong>Fotos e vídeos:</strong> usados para encontrar e exibir mídias de status no dispositivo e salvar mídias selecionadas na galeria.</li>
+        <li><strong>Notificações:</strong> usadas apenas se você ativar o salvamento automático, para mostrar que o serviço está ativo.</li>
+        <li><strong>Serviço em primeiro plano:</strong> usado apenas para o salvamento automático opcional enquanto ele estiver ativo.</li>
       </ul>
+      <h3>Retenção e exclusão</h3>
+      <p>O StatusClip armazena configurações e referências de status salvos localmente no dispositivo. Você pode apagar esses dados limpando os dados do app nas configurações do Android ou desinstalando o app. As fotos e vídeos baixados ficam na sua galeria e podem ser excluídos por lá.</p>
+      <h3>Relação com WhatsApp e Meta</h3>
+      <p>O StatusClip não é afiliado, associado, endossado nem patrocinado pela WhatsApp LLC ou pela Meta Platforms, Inc. Use o app com responsabilidade e respeite a privacidade e os direitos de outras pessoas.</p>
+      <h3>Contato</h3>
+      <p>Desenvolvedor: Gastry · E-mail de suporte: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></p>
+    </article>
+
+    <article class="card" id="id" lang="id">
+      <h2>Bahasa Indonesia</h2>
+      <p><strong>StatusClip</strong> membantu Anda melihat, menyimpan, dan membagikan foto serta video status yang sudah Anda lihat dan tersedia di perangkat Android Anda.</p>
+      <p>Aplikasi ini tidak memerlukan akun, login, atau pendaftaran. Aplikasi ini tidak menyertakan SDK iklan, analitik, pelacakan, atau pembelian dalam aplikasi.</p>
+      <h3>Data yang diakses aplikasi</h3>
+      <p>Untuk menyediakan fitur utamanya, StatusClip dapat mengakses foto dan video yang tersedia di perangkat Anda, termasuk media status yang Anda pilih atau izinkan untuk dibaca aplikasi. Akses ini digunakan untuk menampilkan thumbnail, memutar video, menyimpan media yang dipilih ke galeri, membagikan media saat Anda memintanya, dan mendukung fitur simpan otomatis opsional.</p>
+      <p>StatusClip juga menyimpan pengaturan aplikasi secara lokal di perangkat Anda, seperti sumber status yang dipilih, apakah simpan otomatis aktif, preferensi tampilan, dan referensi lokal ke status yang telah disimpan.</p>
+      <h3>Pengumpulan dan pembagian data</h3>
+      <p>StatusClip tidak mengunggah foto, video, media status, pengaturan, atau riwayat simpan Anda ke server milik pengembang. Aplikasi ini tidak menjual data pribadi.</p>
+      <p>Saat Anda menggunakan tombol bagikan, Android membuka lembar berbagi sistem dan Anda memilih aplikasi atau kontak yang menerima foto atau video yang dipilih.</p>
+      <h3>Izin</h3>
+      <ul>
+        <li><strong>Foto dan video:</strong> digunakan untuk menemukan dan menampilkan media status di perangkat serta menyimpan media yang dipilih ke galeri.</li>
+        <li><strong>Notifikasi:</strong> hanya digunakan jika Anda mengaktifkan simpan otomatis, agar Android dapat menampilkan bahwa layanan aktif.</li>
+        <li><strong>Layanan latar depan:</strong> hanya digunakan untuk fitur simpan otomatis opsional saat aktif.</li>
+      </ul>
+      <h3>Penyimpanan dan penghapusan</h3>
+      <p>StatusClip menyimpan pengaturan dan referensi status tersimpan secara lokal di perangkat. Anda dapat menghapus data ini dengan menghapus data aplikasi di pengaturan Android atau mencopot aplikasi. Foto dan video yang diunduh disimpan di galeri dan dapat dihapus dari aplikasi galeri atau pengelola file.</p>
+      <h3>Hubungan dengan WhatsApp dan Meta</h3>
+      <p>StatusClip tidak berafiliasi, terkait, didukung, atau disponsori oleh WhatsApp LLC maupun Meta Platforms, Inc. Gunakan aplikasi secara bertanggung jawab dan hormati privasi serta hak orang lain.</p>
+      <h3>Kontak</h3>
+      <p>Pengembang: Gastry · Email dukungan: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></p>
+    </article>
+
+    <article class="card" id="hi" lang="hi">
+      <h2>हिन्दी</h2>
+      <p><strong>StatusClip</strong> आपको उन स्टेटस फ़ोटो और वीडियो को देखने, सेव करने और शेयर करने में मदद करता है जिन्हें आप पहले ही देख चुके हैं और जो आपके Android डिवाइस पर उपलब्ध हैं।</p>
+      <p>ऐप के लिए अकाउंट, साइन-इन या रजिस्ट्रेशन की जरूरत नहीं है। इसमें विज्ञापन SDK, analytics SDK, tracking SDK या in-app purchases शामिल नहीं हैं।</p>
+      <h3>ऐप किन डेटा तक पहुंचता है</h3>
+      <p>अपनी मुख्य सुविधाएं देने के लिए StatusClip आपके डिवाइस पर उपलब्ध फ़ोटो और वीडियो तक पहुंच सकता है, जिनमें वे स्टेटस मीडिया भी शामिल हैं जिन्हें आप चुनते हैं या ऐप को पढ़ने की अनुमति देते हैं। इस पहुंच का उपयोग thumbnail दिखाने, वीडियो चलाने, चुने गए मीडिया को गैलरी में सेव करने, आपके कहने पर मीडिया शेयर करने और वैकल्पिक auto-save सुविधा के लिए किया जाता है।</p>
+      <p>StatusClip ऐप सेटिंग्स को आपके डिवाइस पर स्थानीय रूप से सेव करता है, जैसे चुना गया स्टेटस स्रोत, auto-save की स्थिति, display preferences और सेव किए गए स्टेटस के स्थानीय references।</p>
+      <h3>डेटा संग्रह और शेयरिंग</h3>
+      <p>StatusClip आपकी फ़ोटो, वीडियो, स्टेटस मीडिया, सेटिंग्स या सेव हिस्ट्री को डेवलपर के सर्वर पर अपलोड नहीं करता। ऐप व्यक्तिगत डेटा नहीं बेचता।</p>
+      <p>जब आप शेयर बटन का उपयोग करते हैं, Android सिस्टम share sheet खोलता है और आप वह ऐप या contact चुनते हैं जिसे चुनी गई फ़ोटो या वीडियो मिलेगी।</p>
+      <h3>अनुमतियां</h3>
+      <ul>
+        <li><strong>फ़ोटो और वीडियो:</strong> डिवाइस पर स्टेटस मीडिया खोजने, दिखाने और चुने गए मीडिया को गैलरी में सेव करने के लिए।</li>
+        <li><strong>Notifications:</strong> केवल auto-save चालू होने पर, ताकि Android दिखा सके कि सेवा सक्रिय है।</li>
+        <li><strong>Foreground service:</strong> केवल वैकल्पिक auto-save सुविधा सक्रिय होने पर।</li>
+      </ul>
+      <h3>रखरखाव और हटाना</h3>
+      <p>StatusClip सेटिंग्स और सेव किए गए स्टेटस references को डिवाइस पर स्थानीय रूप से रखता है। आप Android settings में app data clear करके या ऐप uninstall करके यह डेटा हटा सकते हैं। डाउनलोड की गई फ़ोटो और वीडियो आपकी gallery में रहती हैं और वहां से हटाई जा सकती हैं।</p>
+      <h3>WhatsApp और Meta से संबंध</h3>
+      <p>StatusClip, WhatsApp LLC या Meta Platforms, Inc. से संबद्ध, समर्थित या प्रायोजित नहीं है। ऐप का जिम्मेदारी से उपयोग करें और अन्य लोगों की privacy और अधिकारों का सम्मान करें।</p>
+      <h3>संपर्क</h3>
+      <p>Developer: Gastry · Support email: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></p>
+    </article>
+
+    <article class="card" id="ar" lang="ar" dir="rtl">
+      <h2>العربية</h2>
+      <p>يساعدك <strong>StatusClip</strong> على عرض وحفظ ومشاركة صور وفيديوهات الحالات التي شاهدتها بالفعل والمتاحة على جهاز Android الخاص بك.</p>
+      <p>لا يتطلب التطبيق حسابًا أو تسجيل دخول أو تسجيلًا. ولا يتضمن حزم SDK للإعلانات أو التحليلات أو التتبع أو عمليات شراء داخل التطبيق.</p>
+      <h3>البيانات التي يصل إليها التطبيق</h3>
+      <p>لتقديم ميزاته الأساسية، قد يصل StatusClip إلى الصور والفيديوهات المتاحة على جهازك، بما في ذلك وسائط الحالات التي تختارها أو تسمح للتطبيق بقراءتها. يُستخدم هذا الوصول لعرض الصور المصغرة، وتشغيل الفيديوهات، وحفظ الوسائط المحددة في معرضك، ومشاركة الوسائط عندما تطلب ذلك، ودعم ميزة الحفظ التلقائي الاختيارية.</p>
+      <p>يحفظ StatusClip أيضًا إعدادات التطبيق محليًا على جهازك، مثل مصادر الحالات المحددة، وحالة الحفظ التلقائي، وتفضيلات العرض، والمراجع المحلية للحالات المحفوظة.</p>
+      <h3>جمع البيانات ومشاركتها</h3>
+      <p>لا يرفع StatusClip صورك أو فيديوهاتك أو وسائط الحالات أو الإعدادات أو سجل الحفظ إلى خوادم يملكها المطور. ولا يبيع التطبيق البيانات الشخصية.</p>
+      <p>عند استخدام زر المشاركة، يفتح Android واجهة المشاركة الخاصة بالنظام، وتختار أنت التطبيق أو جهة الاتصال التي ستتلقى الصورة أو الفيديو المحدد.</p>
+      <h3>الأذونات</h3>
+      <ul>
+        <li><strong>الصور والفيديوهات:</strong> تُستخدم للعثور على وسائط الحالات وعرضها على جهازك وحفظ الوسائط المحددة في معرضك.</li>
+        <li><strong>الإشعارات:</strong> تُستخدم فقط إذا فعّلت الحفظ التلقائي، حتى يعرض Android أن الخدمة نشطة.</li>
+        <li><strong>خدمة في المقدمة:</strong> تُستخدم فقط لميزة الحفظ التلقائي الاختيارية أثناء نشاطها.</li>
+      </ul>
+      <h3>الاحتفاظ والحذف</h3>
+      <p>يحفظ StatusClip إعداداته ومراجع الحالات المحفوظة محليًا على جهازك. يمكنك حذف هذه البيانات عن طريق مسح بيانات التطبيق من إعدادات Android أو إلغاء تثبيت التطبيق. يتم حفظ الصور والفيديوهات التي تم تنزيلها في معرضك ويمكن حذفها من تطبيق المعرض أو مدير الملفات.</p>
+      <h3>العلاقة مع WhatsApp وMeta</h3>
+      <p>لا يرتبط StatusClip ولا ينتسب ولا يحظى بدعم أو رعاية من WhatsApp LLC أو Meta Platforms, Inc. استخدم التطبيق بمسؤولية واحترم خصوصية وحقوق الآخرين.</p>
+      <h3>التواصل</h3>
+      <p>المطور: Gastry · بريد الدعم: <a href="mailto:thegastry@gmail.com">thegastry@gmail.com</a></p>
     </article>
 
     <div class="note">
