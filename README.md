@@ -8,3 +8,4 @@ Repositorio para las politicas de privacidad y documentos relacionados.
 - [El Impostor](./el-impostor/)
 - [StatusClip](./statusclip/)
 - [CodeSnap](./codesnap/)
+- [PeldaPlan](./peldaplan/)
