@@ -9,3 +9,5 @@ Repositorio para las politicas de privacidad y documentos relacionados.
 - [StatusClip](./statusclip/)
 - [CodeSnap](./codesnap/)
 - [PeldaPlan](./peldaplan/)
+- [Guía de Monkey Island 1](./monkey-island-1/)
+- [Guía de Monkey Island 2](./monkey-island-2/)
