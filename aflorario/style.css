@@ -1,0 +1,10 @@
+@font-face{font-family:Inter;src:url(fonts/inter.ttf) format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:Bricolage;src:url(fonts/bricolage.ttf) format('truetype');font-weight:100 900;font-display:swap}
+:root{color-scheme:light;font:100% Inter,system-ui,sans-serif;color:#182b28;background:#fffefa}
+*{box-sizing:border-box}body{margin:0}header,main,footer{width:min(48rem,100%);margin:auto;padding:1.5rem}
+header{display:flex;justify-content:space-between;align-items:center;gap:1rem;border-bottom:1px solid #d9dfd4;flex-wrap:wrap}
+nav{display:flex;gap:1.25rem}a{color:#205c47;text-underline-offset:.25em}a:focus-visible{outline:3px solid #205c47;outline-offset:4px}
+.brand{font-family:Bricolage,Inter,sans-serif;font-size:1.5rem;font-weight:650;text-decoration:none}
+main{padding-top:2.5rem;padding-bottom:3rem}h1{font-family:Bricolage,Inter,sans-serif;font-size:clamp(2rem,5vw,2.75rem);line-height:1.1;font-weight:650;margin:0 0 1.25rem}
+h2{font-size:1.125rem;margin:2rem 0 .75rem}p,li{font-size:1rem;line-height:1.75;margin:0 0 1rem;overflow-wrap:anywhere}
+footer{border-top:1px solid #d9dfd4;color:#4d6157;font-size:.875rem}.links{display:flex;gap:1.5rem;flex-wrap:wrap}

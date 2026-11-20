@@ -12,3 +12,5 @@ Repositorio para las politicas de privacidad y documentos relacionados.
 - [Guía de Monkey Island 1](./monkey-island-1/)
 - [Guía de Monkey Island 2](./monkey-island-2/)
 - [Evidobra](./evidobra/) · [Soporte](./evidobra/support.html) · [Condiciones](./evidobra/terms.html) · 25 idiomas y variantes
+
+- [Aflorario](./aflorario/) · [Soporte](./aflorario/support.html)
