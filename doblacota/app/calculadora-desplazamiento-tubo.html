@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de desplazamiento de tubo | Distancia y pérdida de alcance</title>
+  <meta name="description" content="Calculadora gratuita de desplazamiento de tubo eléctrico con dos dobleces. Calcula distancia y pérdida de alcance con radio al eje y consulta la tabla de factores.">
+  <meta name="theme-color" content="#f3f5ef">
+  <link rel="canonical" href="https://gastry.github.io/privacy-policies/doblacota/app/calculadora-desplazamiento-tubo.html">
+  <link rel="alternate" hreflang="es" href="https://gastry.github.io/privacy-policies/doblacota/app/calculadora-desplazamiento-tubo.html">
+  <link rel="alternate" hreflang="en" href="https://gastry.github.io/privacy-policies/doblacota/app/en/conduit-offset-calculator.html">
+  <link rel="icon" href="assets/icon.webp" type="image/webp">
+  <link rel="stylesheet" href="site.css">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Calculadora de desplazamiento de tubo | Distancia y pérdida de alcance">
+  <meta property="og:description" content="Calculadora gratuita de desplazamiento de tubo eléctrico con dos dobleces. Calcula distancia y pérdida de alcance con radio al eje y consulta la tabla de factores.">
+  <meta property="og:url" content="https://gastry.github.io/privacy-policies/doblacota/app/calculadora-desplazamiento-tubo.html">
+  <meta property="og:image" content="https://gastry.github.io/privacy-policies/doblacota/app/assets/es-offset.webp">
+  <script src="offset.js" defer></script>
+</head>
+<body>
+  <a href="#contenido" class="skip">Ir al contenido</a>
+  <header class="top">
+    <nav class="wrap nav" aria-label="Principal">
+      <a class="brand" href="./"><img src="assets/icon.webp" width="36" height="36" alt="">Doblacota</a>
+      <div class="links">
+        <a href="calculadora-desplazamiento-tubo.html" aria-current="page">Calculadora web</a>
+        <a href="https://gastry.github.io/privacy-policies/doblacota/app/en/conduit-offset-calculator.html" lang="en" hreflang="en">English</a>
+      </div>
+    </nav>
+  </header>
+  <main id="contenido" class="article">
+    <h1>Calculadora de desplazamiento de tubo</h1>
+    <p class="lead">Obtén la distancia entre los dos dobleces de un tubo eléctrico o conduit y cuánto se acorta su alcance en el sentido original.</p>
+    <section class="calculator" aria-label="Medidas del desplazamiento">
+      <p id="offset-hint">Mide la altura entre los ejes de los dos tramos paralelos. Introduce 0 como radio para comparar con el modelo ideal.</p>
+      <form data-offset-form hidden aria-describedby="offset-hint"
+        data-height-error="Introduce una altura positiva de hasta 100 km (o su equivalente en pulgadas)." data-angle-error="Introduce un ángulo de 0,1° a 89,9°."
+        data-radius-error="Introduce un radio de 0 a 100 km (o su equivalente en pulgadas)." data-geometry-error="Con este radio y ángulo, la altura mínima es de {min}.">
+        <div class="fields">
+          <label class="field"><span>Altura al eje (<span data-unit>cm</span>)</span><input name="height" type="text" inputmode="decimal" maxlength="32" value="20"></label>
+          <label class="field"><span>Ángulo por curva (°)</span><input name="angle" type="text" inputmode="decimal" maxlength="32" value="30"></label>
+          <label class="field"><span>Radio al eje (<span data-unit>cm</span>)</span><input name="radius" type="text" inputmode="decimal" maxlength="32" value="5"></label>
+          <label class="field">Unidad<select name="units"><option value="cm" selected>cm</option><option value="in">in</option></select></label>
+        </div>
+        <button class="action" type="submit">Calcular medidas</button>
+      </form>
+      <noscript><p>Activa JavaScript para usar la calculadora. Debajo tienes la fórmula y un ejemplo resuelto.</p></noscript>
+      <div aria-live="polite" aria-atomic="true">
+        <p class="error" data-error hidden></p>
+        <dl class="results" data-results hidden>
+          <div><dt>Distancia entre referencias</dt><dd data-spacing></dd></div>
+          <div><dt>Pérdida de alcance</dt><dd data-shrink></dd></div>
+        </dl>
+      </div>
+    </section>
+    <div class="app-link"><a href="https://play.google.com/store/apps/details?id=com.aplicaciones.gastry.doblacota&amp;hl=es&amp;utm_source=doblacota_web&amp;utm_medium=organic&amp;utm_campaign=offset_es&amp;referrer=utm_source%3Ddoblacota_web%26utm_medium%3Dorganic%26utm_campaign%3Doffset_es">Instalar desde Google Play</a></div>
+    <section>
+      <h2>Ejemplo a 30° con 20 cm de altura</h2>
+      <p>Con dos dobleces opuestos de 30°, un desplazamiento de 20 cm y un radio al eje de 5 cm, salen <strong>39,94 cm entre referencias</strong> y <strong>5,24 cm de pérdida de alcance</strong>. La primera distancia se mide sobre el tubo recto, entre referencias equivalentes de las curvas. La segunda expresa cuánto pierde el tubo en alcance longitudinal al curvarse.</p>
+      <p>La ubicación de la primera marca depende de dónde deba quedar el desplazamiento y de la referencia de tu dobladora. Consulta las marcas del fabricante y comprueba el resultado en un retal del mismo material para tener en cuenta la recuperación elástica.</p>
+    </section>
+    <section>
+      <h2>Fórmula con radio al eje</h2>
+      <p>Para una altura H, radio R y ángulo θ en radianes, la parte recta inclinada mide <strong>L = [H − 2R(1 − cos θ)] ÷ sen θ</strong>. El recorrido entre referencias es <strong>L + Rθ</strong> y la pérdida de alcance es <strong>L(1 − cos θ) + 2R(θ − sen θ)</strong>. Si H es menor que 2R(1 − cos θ), esas dos curvas no caben.</p>
+    </section>
+    <section>
+      <h2>Tabla de multiplicadores con radio cero</h2>
+      <p>Para obtener la distancia ideal, multiplica la altura por 1 ÷ sen θ. Para la pérdida de alcance ideal, usa tan(θ ÷ 2). Los factores de esta tabla están redondeados. Las tablas de taller del fabricante, como la <a href="https://data.kleintools.com/sites/all/product_assets/documents/instructions/klein/ConduitBender_Guide_SPANISH.pdf">guía de Klein Tools</a>, pueden usar otros redondeos y referencias.</p>
+      <table class="table">
+        <thead><tr><th scope="col">Ángulo por curva</th><th scope="col">Multiplicador de distancia</th><th scope="col">Pérdida por unidad de altura</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">10°</th><td>5,759</td><td>0,087</td></tr>
+          <tr><th scope="row">15°</th><td>3,864</td><td>0,132</td></tr>
+          <tr><th scope="row">22,5°</th><td>2,613</td><td>0,199</td></tr>
+          <tr><th scope="row">30°</th><td>2,000</td><td>0,268</td></tr>
+          <tr><th scope="row">45°</th><td>1,414</td><td>0,414</td></tr>
+          <tr><th scope="row">60°</th><td>1,155</td><td>0,577</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="install">
+      <h2>El esquema en tu móvil</h2>
+      <p>Doblacota incluye el desplazamiento en un plano gratis y permite calcularlo sin conexión después de instalar la app. Los desplazamientos espaciales, los tubos paralelos y la exportación de planos PDF están disponibles con Pro.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.aplicaciones.gastry.doblacota&amp;hl=es&amp;utm_source=doblacota_web&amp;utm_medium=organic&amp;utm_campaign=offset_es&amp;referrer=utm_source%3Ddoblacota_web%26utm_medium%3Dorganic%26utm_campaign%3Doffset_es" class="action">Instalar desde Google Play</a>
+    </section>
+  </main>
+  <footer class="wrap foot">
+    <span>Doblacota · Gastry</span>
+    <nav class="links" aria-label="Ayuda y condiciones">
+      <a href="../es/index.html">Privacidad</a>
+      <a href="../es/support.html">Soporte</a>
+      <a href="../es/terms.html">Condiciones</a>
+    </nav>
+  </footer>
+</body>
+</html>

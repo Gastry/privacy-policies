@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conduit Offset Calculator | Bend Spacing and Shrink</title>
+  <meta name="description" content="Calculate conduit offset spacing and shrink using rise, angle and centerline bend radius. Includes a 30-degree worked example and offset multiplier chart.">
+  <meta name="theme-color" content="#f3f5ef">
+  <link rel="canonical" href="https://gastry.github.io/privacy-policies/doblacota/app/en/conduit-offset-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://gastry.github.io/privacy-policies/doblacota/app/calculadora-desplazamiento-tubo.html">
+  <link rel="alternate" hreflang="en" href="https://gastry.github.io/privacy-policies/doblacota/app/en/conduit-offset-calculator.html">
+  <link rel="icon" href="../assets/icon.webp" type="image/webp">
+  <link rel="stylesheet" href="../site.css">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Conduit Offset Calculator | Bend Spacing and Shrink">
+  <meta property="og:description" content="Calculate conduit offset spacing and shrink using rise, angle and centerline bend radius. Includes a 30-degree worked example and offset multiplier chart.">
+  <meta property="og:url" content="https://gastry.github.io/privacy-policies/doblacota/app/en/conduit-offset-calculator.html">
+  <meta property="og:image" content="https://gastry.github.io/privacy-policies/doblacota/app/assets/en-offset.webp">
+  <script src="../offset.js" defer></script>
+</head>
+<body>
+  <a href="#contenido" class="skip">Skip to content</a>
+  <header class="top">
+    <nav class="wrap nav" aria-label="Main">
+      <a class="brand" href="./"><img src="../assets/icon.webp" width="36" height="36" alt="">BendTally</a>
+      <div class="links">
+        <a href="conduit-offset-calculator.html" aria-current="page">Web calculator</a>
+        <a href="https://gastry.github.io/privacy-policies/doblacota/app/calculadora-desplazamiento-tubo.html" lang="es" hreflang="es">Español</a>
+      </div>
+    </nav>
+  </header>
+  <main id="contenido" class="article">
+    <h1>Conduit offset calculator</h1>
+    <p class="lead">Get bend spacing and shrink for a two-bend offset. Enter the rise, angle per bend and centerline radius of your bender.</p>
+    <section class="calculator" aria-label="Offset dimensions">
+      <p id="offset-hint">Measure rise between the two parallel centerlines. Set radius to 0 to compare against the sharp-corner model.</p>
+      <form data-offset-form hidden aria-describedby="offset-hint"
+        data-height-error="Enter a positive rise up to 100 km (or the equivalent in inches)." data-angle-error="Enter an angle from 0.1° to 89.9°."
+        data-radius-error="Enter a radius from 0 to 100 km (or the equivalent in inches)." data-geometry-error="This radius and angle require at least {min} of rise.">
+        <div class="fields">
+          <label class="field"><span>Centerline rise (<span data-unit>in</span>)</span><input name="height" type="text" inputmode="decimal" maxlength="32" value="6"></label>
+          <label class="field"><span>Angle per bend (°)</span><input name="angle" type="text" inputmode="decimal" maxlength="32" value="30"></label>
+          <label class="field"><span>Centerline radius (<span data-unit>in</span>)</span><input name="radius" type="text" inputmode="decimal" maxlength="32" value="4"></label>
+          <label class="field">Units<select name="units"><option value="cm">cm</option><option value="in" selected>in</option></select></label>
+        </div>
+        <button class="action" type="submit">Calculate offset</button>
+      </form>
+      <noscript><p>Enable JavaScript to use the calculator. The formula and a worked example are below.</p></noscript>
+      <div aria-live="polite" aria-atomic="true">
+        <p class="error" data-error hidden></p>
+        <dl class="results" data-results hidden>
+          <div><dt>Bend spacing</dt><dd data-spacing></dd></div>
+          <div><dt>Shrink</dt><dd data-shrink></dd></div>
+        </dl>
+      </div>
+    </section>
+    <div class="app-link"><a href="https://play.google.com/store/apps/details?id=com.aplicaciones.gastry.doblacota&amp;hl=en&amp;utm_source=doblacota_web&amp;utm_medium=organic&amp;utm_campaign=offset_en&amp;referrer=utm_source%3Ddoblacota_web%26utm_medium%3Dorganic%26utm_campaign%3Doffset_en">Install from Google Play</a></div>
+    <section>
+      <h2>30° offset with a 6-inch rise</h2>
+      <p>With two opposite 30° bends, a 6-inch rise and a 4-inch centerline radius, the layout has <strong>11.95 in of bend spacing</strong> and <strong>1.51 in of shrink</strong>. Spacing is measured on the straight conduit between equivalent bend references. Shrink is the loss of reach along the original run.</p>
+      <p>To place the first mark, use the location of the offset and the reference for your bender. Check the manufacturer’s markings and test on a scrap of the same material to account for springback.</p>
+    </section>
+    <section>
+      <h2>Offset formula with a bend radius</h2>
+      <p>For rise H, radius R and angle θ in radians, the straight segment between arcs is <strong>L = [H − 2R(1 − cos θ)] ÷ sin θ</strong>. Bend spacing is <strong>L + Rθ</strong>, and shrink is <strong>L(1 − cos θ) + 2R(θ − sin θ)</strong>. The curves require a rise of at least 2R(1 − cos θ).</p>
+    </section>
+    <section>
+      <h2>Offset multiplier chart for radius zero</h2>
+      <p>In the sharp-corner model, multiply rise by 1 ÷ sin θ for spacing and by tan(θ ÷ 2) for shrink. The table rounds these factors. A manufacturer’s bender chart, such as the <a href="https://data.kleintools.com/sites/all/product_assets/documents/instructions/klein/ConduitBenderGuide.pdf">Klein Tools guide</a>, may use different rounding and references.</p>
+      <table class="table">
+        <thead><tr><th scope="col">Angle per bend</th><th scope="col">Spacing multiplier</th><th scope="col">Shrink per unit of rise</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">10°</th><td>5.759</td><td>0.087</td></tr>
+          <tr><th scope="row">15°</th><td>3.864</td><td>0.132</td></tr>
+          <tr><th scope="row">22.5°</th><td>2.613</td><td>0.199</td></tr>
+          <tr><th scope="row">30°</th><td>2.000</td><td>0.268</td></tr>
+          <tr><th scope="row">45°</th><td>1.414</td><td>0.414</td></tr>
+          <tr><th scope="row">60°</th><td>1.155</td><td>0.577</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="install">
+      <h2>Conduit layouts on Android</h2>
+      <p>BendTally includes a free single-plane offset tool with a dimensioned drawing and works offline after installation. Pro adds rolled offsets, parallel runs and PDF export.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.aplicaciones.gastry.doblacota&amp;hl=en&amp;utm_source=doblacota_web&amp;utm_medium=organic&amp;utm_campaign=offset_en&amp;referrer=utm_source%3Ddoblacota_web%26utm_medium%3Dorganic%26utm_campaign%3Doffset_en" class="action">Install from Google Play</a>
+    </section>
+  </main>
+  <footer class="wrap foot">
+    <span>BendTally · Gastry</span>
+    <nav class="links" aria-label="Help and terms">
+      <a href="../../en/index.html">Privacy</a>
+      <a href="../../en/support.html">Support</a>
+      <a href="../../en/terms.html">Terms</a>
+    </nav>
+  </footer>
+</body>
+</html>
