@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Plantilla de informe de visita de obra en PDF · Evidobra</title>
+  <meta name="description" content="Plantilla gratuita de informe de visita de obra. Rellena la ficha en el navegador y guarda el PDF, o descarga el modelo en blanco para imprimir.">
+  <meta name="theme-color" content="#f3f3ec">
+  <link rel="canonical" href="https://gastry.github.io/privacy-policies/evidobra/app/plantilla-informe-visita-obra.html">
+  <link rel="icon" href="../../apps/assets/evidobra-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="visita.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Plantilla de informe de visita de obra · Evidobra">
+  <meta property="og:description" content="Plantilla gratuita de informe de visita de obra. Rellena la ficha en el navegador y guarda el PDF, o descarga el modelo en blanco para imprimir.">
+  <meta property="og:url" content="https://gastry.github.io/privacy-policies/evidobra/app/plantilla-informe-visita-obra.html">
+  <meta property="og:image" content="https://gastry.github.io/privacy-policies/apps/assets/evidobra.webp">
+  <meta property="og:locale" content="es_ES">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Plantilla de informe de visita de obra","description":"Plantilla gratuita de informe de visita de obra. Rellena la ficha en el navegador y guarda el PDF, o descarga el modelo en blanco para imprimir.","url":"https://gastry.github.io/privacy-policies/evidobra/app/plantilla-informe-visita-obra.html","inLanguage":"es","publisher":{"@type":"Organization","name":"Gastry"},"mainEntity":{"@type":"DigitalDocument","name":"Ficha de visita de obra imprimible","encodingFormat":"application/pdf","contentUrl":"https://gastry.github.io/privacy-policies/evidobra/app/plantilla-informe-visita-obra.pdf"}}</script>
+  <script src="visita.js" defer></script>
+</head>
+<body>
+  <header class="top no-print">
+    <div class="wrap bar">
+      <a class="skip" href="#contenido">Saltar al contenido</a>
+      <a class="brand" href="../../apps/#evidobra"><img src="../../apps/assets/evidobra-icon.svg" width="36" height="36" alt="">Evidobra</a>
+      <a href="https://play.google.com/store/apps/details?id=com.gastry.evidobra&amp;hl=es&amp;gl=ES&amp;utm_source=evidobra_plantilla&amp;utm_medium=organic&amp;utm_campaign=visita_obra_es&amp;referrer=utm_source%3Devidobra_plantilla%26utm_medium%3Dorganic%26utm_campaign%3Dvisita_obra_es">Ver Evidobra en Google Play</a>
+    </div>
+  </header>
+  <main id="contenido" class="wrap">
+    <header class="intro no-print">
+      <div>
+        <h1>Plantilla de informe de visita de obra</h1>
+        <p>Prepara el informe de una visita o reforma con una ficha gratuita para anotar incidencias, referencias de fotos, responsables y fechas de revisión.</p>
+        <div class="actions">
+          <a class="button primary" href="#ficha">Rellenar la ficha</a>
+          <a class="button" href="plantilla-informe-visita-obra.pdf" download>Descargar PDF en blanco</a>
+        </div>
+      </div>
+      <img class="preview" src="../../apps/assets/evidobra.webp" width="644" height="420" alt="Incidencia de fachada en el proyecto de demostración de Evidobra">
+    </header>
+
+    <section class="sheet" id="ficha" aria-labelledby="ficha-titulo">
+      <div class="sheet-header">
+        <div>
+          <h2 id="ficha-titulo">Ficha de visita de obra</h2>
+          <p class="no-print">Rellena los campos que necesites. La página no envía tus anotaciones a un servidor.</p>
+        </div>
+        <button class="button no-print" type="button" id="print-sheet" hidden>Imprimir o guardar PDF</button>
+      </div>
+      <noscript><p class="no-print">Puedes descargar el PDF en blanco. Para imprimir con las respuestas rellenadas en esta página, activa JavaScript.</p></noscript>
+      <form id="worksheet" autocomplete="off">
+        <fieldset>
+          <legend>Datos de la visita</legend>
+          <div class="fields">
+            <div class="field-row cols-2">
+              <label><span>Proyecto u obra</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+              <label><span>Fecha de la visita</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+            </div>
+            <div class="field-row cols-2">
+              <label><span>Zona o fase de obra</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+              <label><span>Persona que redacta el informe</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+            </div>
+            <div class="field-row">
+              <label><span>Asistentes y motivo de la visita</span><textarea rows="2"></textarea><span class="print-value" aria-hidden="true"></span></label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Incidencia 1</legend>
+          <div class="fields">
+            <div class="field-row cols-2">
+              <label><span>Ubicación concreta</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+              <label><span>Referencia de fotos</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+            </div>
+            <div class="field-row">
+              <label><span>Qué se observó y qué falta por comprobar</span><textarea rows="2"></textarea><span class="print-value" aria-hidden="true"></span></label>
+            </div>
+            <div class="field-row cols-2">
+              <label><span>Acción acordada</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+              <label><span>Responsable</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+            </div>
+            <div class="field-row cols-2">
+              <label><span>Plazo o fecha de revisión</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+              <label><span>Estado</span><select aria-label="Estado"><option value="">Elige un estado</option><option>Pendiente</option><option>En curso</option><option>Cerrada</option></select><span class="print-value" aria-hidden="true"></span></label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Incidencia 2</legend>
+          <div class="fields">
+            <div class="field-row cols-2">
+              <label><span>Ubicación concreta</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+              <label><span>Referencia de fotos</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+            </div>
+            <div class="field-row">
+              <label><span>Qué se observó y qué falta por comprobar</span><textarea rows="2"></textarea><span class="print-value" aria-hidden="true"></span></label>
+            </div>
+            <div class="field-row cols-2">
+              <label><span>Acción acordada</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+              <label><span>Responsable</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+            </div>
+            <div class="field-row cols-2">
+              <label><span>Plazo o fecha de revisión</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+              <label><span>Estado</span><select aria-label="Estado"><option value="">Elige un estado</option><option>Pendiente</option><option>En curso</option><option>Cerrada</option></select><span class="print-value" aria-hidden="true"></span></label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Seguimiento</legend>
+          <div class="fields">
+            <div class="field-row">
+              <label><span>Acuerdos y puntos que se revisarán</span><textarea rows="2"></textarea><span class="print-value" aria-hidden="true"></span></label>
+            </div>
+            <div class="field-row cols-2">
+              <label><span>Fecha de próxima visita</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+              <label><span>Firma o nombre de quien revisa</span><input type="text"><span class="print-value" aria-hidden="true"></span></label>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="guide no-print" aria-labelledby="ejemplo">
+      <h2 id="ejemplo">Ejemplo de seguimiento de una incidencia</h2>
+      <dl>
+        <div><dt>Qué se observó</dt><dd>En la ventana del portal queda un tramo sin sellar. La foto F-01 identifica el hueco y su ubicación.</dd></div>
+        <div><dt>Qué se acordó</dt><dd>El equipo asignado revisará ese tramo antes de la próxima visita y adjuntará la foto F-02.</dd></div>
+        <div><dt>Cómo se cierra</dt><dd>En la visita siguiente, comprueba el mismo punto y anota el resultado junto al número de foto.</dd></div>
+      </dl>
+      <p>La ficha recoge referencias a fotos. Para añadir las imágenes al informe, anotar sobre ellas y seguir el estado de la incidencia en Android, puedes usar Evidobra.</p>
+      <a class="button primary" href="https://play.google.com/store/apps/details?id=com.gastry.evidobra&amp;hl=es&amp;gl=ES&amp;utm_source=evidobra_plantilla&amp;utm_medium=organic&amp;utm_campaign=visita_obra_es&amp;referrer=utm_source%3Devidobra_plantilla%26utm_medium%3Dorganic%26utm_campaign%3Dvisita_obra_es">Ver Evidobra en Google Play</a>
+    </section>
+  </main>
+  <footer class="no-print">
+    <div class="wrap bar">
+      <a href="../../apps/">Apps de Gastry</a>
+      <a href="../">Privacidad de Evidobra</a>
+    </div>
+  </footer>
+</body>
+</html>

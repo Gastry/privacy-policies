@@ -243,3 +243,6 @@ h1 {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; }
 }
+
+.app-actions { display: grid; gap: 7px; }
+.app-resource { justify-self: start; font-size: .925rem; line-height: 1.35; }
